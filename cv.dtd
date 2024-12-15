@@ -1,0 +1,37 @@
+<!ELEMENT cv (entete, Formations, stages, projets, competences, langues, loisirs)>
+<!ELEMENT entete (nom, prenom, dateDeNaissance, nationalite, telephone, mail, linkedin, github, bio)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT dateDeNaissance (#PCDATA)>
+<!ELEMENT nationalite (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+<!ELEMENT bio (#PCDATA)*>
+
+<!ELEMENT Formations (diplome+)>
+<!ELEMENT diplome (annee, intitule)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT intitule (#PCDATA)>
+
+<!ELEMENT stages (stage+)>
+<!ELEMENT stage (date, titre, description)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT projets (projet+)>
+<!ELEMENT projet (titre, description)>
+
+
+<!ELEMENT competences (competence+)>
+<!ELEMENT competence (titre, description)>
+
+
+<!ELEMENT langues (langue+)>
+<!ELEMENT langue (intitule, niveau)>
+<!ELEMENT niveau (#PCDATA)>
+
+<!ELEMENT loisirs (loisir+)>
+<!ELEMENT loisir (#PCDATA)>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<?xml-stylesheet type="text/xsl" href="CV.xsl"?>
+<cv>
+    <entete>
+        <nom>Roubakhi</nom>
+        <prenom>Hayat</prenom>
+        <dateDeNaissance>30-09-2001</dateDeNaissance>
+        <nationalite>Marocaine</nationalite>
+        <telephone>06227896522</telephone>
+        <mail>hayat@gmail.com</mail>
+        <linkedin>Hayat Roubakhi</linkedin>
+        <github>hayatvyhr</github>
+        <bio>
+            Étudiante en génie informatique à  l'École Nationale des Sciences Appliquées de Tétouan. 
+             je suis actuellement étudiante à l'École Nationale des Sciences Appliquées de Tétouan, où je me plonge dans les dernières avancées technologiques. Animée par le désir constant de grandir professionnellement,
+            je suis à la recherche d'une opportunité de stage en entreprise
+        </bio>
+    </entete>
+    <Formations>
+        <diplome>
+            <annee>2018-2019</annee>
+            <intitule>Baccalauréat sciences Physique mention trés bien</intitule>
+        </diplome>
+        <diplome>
+            <annee>2020-2021</annee>
+            <intitule>Baccalauréat sciences math B</intitule>
+        </diplome>
+        <diplome>
+            <annee>2020-présent</annee>
+            <intitule>Diplôme d'ingénieur d'état en Informatique: ENSA Tétouan</intitule>
+        </diplome>
+    </Formations>
+    <stages>
+        <stage>
+            <date>2023-07-01 - 2023-09-01</date>
+            <titre>Stage d'initialisation </titre>
+            <description>Expérience approfondie en optimisation du référencement
+                (SEO) pour atteindre des classements élevés sur les moteurs
+                de recherche. 
+                Acquisition de compétences avancées dans l'utilisation de
+                WordPress et la création de sites web via la plateforme.
+            </description>
+        </stage>
+    </stages>
+    <projets>
+        <projet>
+            <titre>CRÉATION D'UN SITE TOURISTIQUE ATTRACTIF :</titre>
+            <description>
+                Création d'un site web interactif pour le tourisme dans une ville intelligente utilisant React et Node.js. Le site permet aux utilisateurs d'explorer les meilleurs endroits à visiter dans la ville, de planifier leur journée, de trouver des hôtels disponibles et d'identifier les itinéraires les plus rapides vers les destinations populaires.
+            </description>
+        </projet>
+        
+        <projet>
+            <titre>APPLICATION WEB : GESTION DE LOCATION</titre>
+            <description>
+                Conception et développement d'une application web pour la location d'objets entre particuliers. Technologies utilisées : Django, MongoDB, Ajax.
+            </description>
+        </projet>
+        
+        <projet>
+            <titre>APPLICATION DESKTOP : GESTION DE SCOLARITÉ</titre>
+            <description>
+                Conception et développement d'une application desktop pour le service de scolarité qui traite les demandes des étudiants et génère automatiquement les documents scolaires. Technologies utilisées : Java Swing, MySQL.
+            </description>
+        </projet>
+        
+        <projet>
+            <titre>APPLICATION WEB : COMMUNICATION ENTRE INFLUENCEURS ET MARQUES</titre>
+            <description>
+                Développement d'une plateforme de mise en relation des influenceurs et des marques. Technologies utilisées : PHP/MySQL, JavaScript, .
+            </description>
+        </projet> 
+    </projets>
+    
+    <competences>
+        <competence>
+            <titre>Développement web :</titre>
+            <description>Laravel, php7, javascript, django, React</description>
+        </competence>
+        <competence>
+            <titre>Base de données :</titre>
+            <description>Oracle, SQL, Mysql, MongoDB, PLSQL</description>
+        </competence>
+        <competence>
+            <titre>Outils et autres technologies :</titre>
+            <description>Git , Wordpress, SEO</description>
+        </competence>
+    </competences>
+    <langues>
+        <langue>
+            <intitule>Français</intitule>
+            <niveau>B2</niveau>
+        </langue>
+        <langue>
+            <intitule>Anglais</intitule>
+            <niveau>B2</niveau>
+        </langue>
+        <langue>
+            <intitule>Espagnol</intitule>
+            <niveau>B2</niveau>
+        </langue>
+        <langue>
+            <intitule>Arabe</intitule>
+            <niveau>Maternelle</niveau>
+        </langue>
+    </langues>
+    <loisirs>
+        <loisir>Lecture de romans</loisir>
+        <loisir>Pratique du tennis</loisir>
+        <loisir>Voyage et exploration</loisir>
+    </loisirs>
+    
+
+</cv>

@@ -1,0 +1,303 @@
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+@media print {
+    .page-break {
+        display: block;
+        page-break-before: always;
+    }
+
+    #hobbiesandinterests h2 {
+        padding-top: 1cm;
+    }
+
+    #references h2 {
+        padding-top: 1cm;
+    }
+}
+@page {
+    margin: 0mm;  
+}
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("Fonts/ArchitectsDaughter-Regular.ttf");
+}
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("Fonts/PermanentMarker-Regular.ttf");
+}
+@font-face {
+    font-family: "LatoBlack";
+    src: url("Fonts/Lato-Black.ttf");
+}
+@font-face {
+    font-family: "LatoBold";
+    src: url("Fonts/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: "LatoRegular";
+    src: url("Fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "LatoLight";
+    src: url("Fonts/Lato-Light.ttf");
+}
+@font-face {
+    font-family: "LatoThin";
+    src: url("Fonts/Lato-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("Fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Thin-250";
+    src: url("Fonts/Montserrat-Thin-250.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("Fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium-500";
+    src: url("Fonts/Montserrat-Medium-500.ttf");
+}
+
+:root{
+    --Background: black;
+    --Background-LeftColumn: #7289da;
+    --Background-RightColumn: #ffffff;
+    --text-LeftColumn: #2c2f33;
+    --text-RightColumn: #2c2f33;
+    --text-Name: #323B4C;
+    --text-Profile: #2c2f33;
+    --text-GategoryName: #7289da;
+    --text-TimeScale: #323B4C;
+    --text-EntryDescription: #323B4C;
+}
+/*</editor-fold>*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+a{
+    color: var(--text-Name);
+}
+body {
+    background-color: var(--Background);
+}
+
+.CV {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px black solid;
+    width: 1100px;
+    height:1100px;
+}
+.CV:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*<editor-fold desc="Left Column">*/
+.LeftColumn {
+    float: left;
+    width: 33%;
+    padding: 20px;
+    text-align: left;
+    background-color: var(--Background-LeftColumn);
+    color: var(--text-LeftColumn);
+    height: 1380px;
+}
+#Div_MyImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#Div_Bio p {
+    text-align: justify;
+    margin: 10px;
+}
+#Div_Info {
+    margin: 10px 0 0 30px;
+}
+
+.H3_EntrySubject_Left {
+    font-size: 20px;
+    color: #e0e660;
+    font-family: Lato-Bold;
+}
+.Div_EntryContentDescription_Left {
+    font-family: Lato-Bold;
+    color: #2c2f33;
+    margin: 5px 5px 10px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+ 
+}
+.H3_EntrySubject_Language {
+    float: left;
+    width: 14%;
+    margin: 0 0 0 15px;
+    font-size: 18px;
+    color: var(--Background-RightColumn);
+}
+.Div_EntryContentDescription_Language p{
+    font-family: Montserrat-Thin-250, serif;
+    color: var(--Background-RightColumn);
+    margin: 5px 5px 10px 40%;
+    text-align: left;
+}
+.paragraph{
+    text-align: left;
+    color: #2c2f33;
+    font-size: 18px;
+    margin-right: 5%;
+    margin-left: 2%;
+
+}
+.icon{
+    font-family:  Montserrat-Thin-250, serif;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10PX;
+    color: var(--text-GategoryName);
+}
+.Div_EntryContentDescription_Hobbits {
+    font-family:  Montserrat-Thin-250, serif;
+    color: var(--Background-RightColumn);
+    margin: 5px 0 0 15px;
+    text-align: left;
+}
+
+/*</editor-fold>*/
+/*<editor-fold desc="Right Column">*/
+.RightColumn {
+    background-color: var(--Background-RightColumn);
+    color: var(--text-RightColumn);
+    float: left;
+    width: 67%;
+    padding: 20px;
+    text-align: left;
+    height: 1380px;
+}
+
+/*<editor-fold desc="Name & Profile">*/
+#Div_Me h1{
+    font-family: Lato-Bold;
+    line-height: 100px;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--text-Name);
+    white-space: nowrap;    
+}
+
+#Div_Me h3{
+    font-family: Lato-Bold;
+    line-height: 40px;
+    font-size: 30px;
+    margin-top: 0;
+    color: var(--text-Profile);
+}
+/*</editor-fold>*/
+/*<editor-fold desc="Entries">*/
+#Div_Content {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+#Div_Content_Left {
+    text-align: left;
+    margin-top: 20px;
+    font-family: Montserrat-Thin-250, serif;
+}
+
+#Div_Bio p {
+    text-align: left;
+    margin-top: 20px;
+    font-family: Montserrat-Thin-250, serif;
+}
+
+#Div_Content h2, #Div_Content_Left h2{
+    font-family:  Montserrat-Thin-250, serif;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10PX;
+    color: var(--text-GategoryName);
+}
+
+.Div_Entry {
+    margin: 15px 15px 15px 0;
+}
+.Label_TimeScale{
+    color: firebrick;   
+     float: left;
+font-size: medium;
+    margin: 0 0 0 15px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.Label_TimeScale2{
+    color: #e0e660;   
+     float: left;
+font-size: medium;
+    font-weight: bold;
+    margin-right: 15px;
+    
+}
+.H3_EntrySubject {
+    margin-left: 2%;
+    font-size: 15px;
+    color: firebrick;
+}
+.H3_Entry{
+    
+    margin-left: 12%;
+    font-size: 16px;
+    color: black;
+
+
+}
+.Div_EntryContentDescription {
+    color: var(--text-EntryDescription);
+    margin-top: 5px;
+        margin-left: 3%;
+        font-size: 20px;
+}
+.Div_EntryContentDescrip1 {
+    color: var(--text-EntryDescription);
+    margin-top: 5px;
+    margin-left: 1%;
+    font-size: large;
+    margin-right : 2%;
+}
+.Div_EntryBody {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.Div_EducationEntryContentDescription {
+    color: var(--text-Name);
+    margin-top: 5px;
+    margin-left: 20% ;
+}
+/*</editor-fold>*/
+/*</editor-fold>*/

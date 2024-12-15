@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="cv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="entete"/>
+        <xs:element ref="Formations"/>
+        <xs:element ref="stages"/>
+        <xs:element ref="projets"/>
+        <xs:element ref="competences"/>
+        <xs:element ref="langues"/>
+        <xs:element ref="loisirs"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="prenom"/>
+        <xs:element ref="dateDeNaissance"/>
+        <xs:element ref="nationalite"/>
+        <xs:element ref="telephone"/>
+        <xs:element ref="mail"/>
+        <xs:element ref="linkedin"/>
+        <xs:element ref="github"/>
+        <xs:element ref="bio"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nom" type="xs:NCName"/>
+  <xs:element name="prenom" type="xs:NCName"/>
+  <xs:element name="dateDeNaissance" type="xs:NMTOKEN"/>
+  <xs:element name="nationalite" type="xs:NCName"/>
+  <xs:element name="telephone" type="xs:integer"/>
+  <xs:element name="mail" type="xs:string"/>
+  <xs:element name="linkedin" type="xs:string"/>
+  <xs:element name="github" type="xs:NCName"/>
+  <xs:element name="bio" type="xs:string"/>
+  <xs:element name="Formations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="diplome"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="diplome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="annee"/>
+        <xs:element ref="intitule"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="annee" type="xs:NMTOKEN"/>
+  <xs:element name="stages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="date"/>
+        <xs:element ref="titre"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="date" type="xs:string"/>
+  <xs:element name="projets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="projet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="projet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titre"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="competences">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="competence"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="competence">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titre"/>
+        <xs:element ref="description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="langues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="langue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="langue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="intitule"/>
+        <xs:element ref="niveau"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="niveau" type="xs:NCName"/>
+  <xs:element name="loisirs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="loisir"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="loisir" type="xs:string"/>
+  <xs:element name="intitule" type="xs:string"/>
+  <xs:element name="titre" type="xs:string"/>
+  <xs:element name="description" type="xs:string"/>
+</xs:schema>
